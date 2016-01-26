@@ -1,6 +1,6 @@
 {
   "name": "react-perf-utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "wrapper for react/lib/ReactDefaultPerfAnalysis with utility functions for measuring component rendering performance and reporting",
   "main": "lib/index.js",
   "scripts": {
