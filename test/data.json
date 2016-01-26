@@ -1,0 +1,89 @@
+[
+  {
+    "exclusive": {
+      ".0.0.0.$=11.0": 2.03999999999985,
+      ".0.0.0.$=11": 0.7000000000001592,
+      ".0.0.0": 2.5299999999999727,
+      ".0.0.1.0": 0.48500000000001364,
+      ".0.0.2.0": 0.6900000000000546,
+      ".0.0": 2.464999999999918,
+      ".0": 3.715000000000032
+    },
+    "inclusive": {
+      ".0.0.0.$=11.0": 2.03999999999985,
+      ".0.0.0.$=11": 2.740000000000009,
+      ".0.0.0": 10.199999999999932,
+      ".0.0.1.0": 0.48500000000001364,
+      ".0.0.2.0": 0.6900000000000546,
+      ".0.0": 17.3599999999999,
+      ".0": 12.625
+    },
+    "render": {
+      ".0": 0.09000000000003183,
+      ".0.0": 0.9300000000000637,
+      ".0.0.0": 0.7300000000000182,
+      ".0.0.0.$=11": 0.459999999999809,
+      ".0.0.0.$=11.0": 0.6899999999999409,
+      ".0.0.1.0": 0.23500000000001364,
+      ".0.0.2.0": 0.26499999999998636
+    },
+    "counts": {
+      ".0": 1,
+      ".0.0": 1,
+      ".0.0.0": 2,
+      ".0.0.0.$=11": 1,
+      ".0.0.0.$=11.0": 1,
+      ".0.0.1.0": 1,
+      ".0.0.2.0": 1
+    },
+    "writes": {
+      "": [
+        {
+          "type": "_mountImageIntoNode",
+          "time": 0.37999999999999545,
+          "args": "<span data-reactid=\".0\"><div class=\"page-wrapper\" data-reactid=\".0.0\"><div class=\"\" data-reactid=\".0.0.0\"><header class=\"zeus-header\" data-reactid=\".0.0.0.$=11\"><div class=\"Grid--gutters text-left Grid\" data-reactid=\".0.0.0.$=11.0\"><div class=\"Grid-col u-size-1 u-size-2-12-s u-size-2-12-m valign-middle\" data-reactid=\".0.0.0.$=11.0.$/=10\"><a href=\"\" data-reactid=\".0.0.0.$=11.0.$/=10.0\"><i class=\"wmicon wmicon-16 wmicon-angle-left\" data-reactid=\".0.0.0.$=11.0.$/=10.0.0\"></i><span data-reactid=\".0.0.0.$=11.0.$/=10.0.1\"></span></a></div><div class=\"Grid-col u-size-1 u-size-8-12-s u-size-8-12-m valign-middle\" data-reactid=\".0.0.0.$=11.0.$/=11\"><div class=\"text-center\" data-reactid=\".0.0.0.$=11.0.$/=11.0\"><a href=\"/\" class=\"zeus-header-logo\" data-reactid=\".0.0.0.$=11.0.$/=11.0.0\"><img alt=\"Walmart. Save Money. Live Better.\" src=\"//i5.walmartimages.com/dfw/63fd9f59-a546/k2-_47005cc8-29da-4fa9-ac2c-45e102a55bf5.v1.png\" data-reactid=\".0.0.0.$=11.0.$/=11.0.0.0\"/><h1 data-reactid=\".0.0.0.$=11.0.$/=11.0.0.1\">Rendering Performance</h1></a></div></div></div></header></div><div class=\"body-wrapper\" data-reactid=\".0.0.1\"><div class=\"well well-below\" data-reactid=\".0.0.1.0\">HI! I&#x27;M MR. MEESEEKS! LOOK AT ME!</div></div><div class=\"clearfix zeus-footer\" data-reactid=\".0.0.2\"><div class=\"text-left Grid\" data-reactid=\".0.0.2.0\"><div class=\"zeus-footer-container Grid-col u-size-1 u-size-6-12-s \" data-reactid=\".0.0.2.0.$/=10\"><div class=\"zeus-footer-left\" data-reactid=\".0.0.2.0.$/=10.0\">© 2015 Walmart Stores, Inc.</div></div><div class=\"zeus-footer-container Grid-col u-size-1 u-size-6-12-s \" data-reactid=\".0.0.2.0.$/=11\"><div class=\"zeus-footer-right\" data-reactid=\".0.0.2.0.$/=11.0\"><div class=\"zeus-footer-left-content\" data-reactid=\".0.0.2.0.$/=11.0.0\"></div><div class=\"zeus-footer-right-content\" data-reactid=\".0.0.2.0.$/=11.0.1\"><a class=\"js-footer-feedback-opinion-lab\" href=\"https://secure.opinionlab.com/ccc01/comment_card_d.asp\" data-reactid=\".0.0.2.0.$/=11.0.1.0\">Leave feedback</a></div></div></div></div></div></div></span>"
+        }
+      ]
+    },
+    "displayNames": {
+      ".0": {
+        "current": "PerformanceProvider",
+        "owner": "<root>"
+      },
+      ".0.0": {
+        "current": "StatelessComponent",
+        "owner": "<root>"
+      },
+      ".0.0.0": {
+        "current": "MediaSelector",
+        "owner": "Body"
+      },
+      ".0.0.0.$=11": {
+        "current": "body-tablet-header",
+        "owner": "Body"
+      },
+      ".0.0.0.$=11.0": {
+        "current": "Layout",
+        "owner": "body-tablet-header"
+      },
+      ".0.0.1.0": {
+        "current": "Well",
+        "owner": "StatelessComponent"
+      },
+      ".0.0.2.0": {
+        "current": "Layout",
+        "owner": "Body"
+      }
+    },
+    "totalTime": 0,
+    "created": {
+      ".0": true,
+      ".0.0": true,
+      ".0.0.0": true,
+      ".0.0.0.$=11": true,
+      ".0.0.0.$=11.0": true,
+      ".0.0.1.0": true,
+      ".0.0.2.0": true
+    }
+  }
+]
