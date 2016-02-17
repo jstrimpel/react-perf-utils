@@ -27,8 +27,10 @@
   },
   "homepage": "https://github.com/jstrimpel/react-perf-utils#readme",
   "dependencies": {
-    "react": "^0.14.6",
     "react-addons-perf": "^0.14.6"
+  },
+  "peerDependencies": {
+    "react": "^0.14.6"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
