@@ -1,10 +1,10 @@
-import ReactDefaultPerfAnalysis from 'react/lib/ReactDefaultPerfAnalysis';
-import assign from 'react/lib/Object.assign';
+import ReactDefaultPerfAnalysis from "react-dom/lib/ReactPerf";
+import assign from "object-assign";
 
 const metricsMap = {
-  render: 'render',
-  mount: 'exclusive'
-}
+  render: "render",
+  mount: "exclusive"
+};
 
 // copied from react/lib/ReactDefaultPerfAnalysis.js
 // this is used when getting rendering and mounting times because
@@ -50,7 +50,7 @@ function getExclusiveSummary(measurements) {
     }
   }
 
-  arr.sort(function (a, b) {
+  arr.sort(function(a, b) {
     return b.exclusive - a.exclusive;
   });
 
@@ -59,40 +59,42 @@ function getExclusiveSummary(measurements) {
 
 function getMetric(displayName, measurements, metric, avg) {
   const summary = getExclusiveSummary(measurements);
-  const metrics = summary.filter((metric) => {
+  const metrics = summary.filter(metric => {
     return displayName === metric.componentName;
   })[0];
   const value = metrics && metrics[metricsMap[metric]];
 
   // component does not exist
   if (!metrics) {
-    throw 'react-perf-utils: The compoent, "' + displayName + '"", does not exist in the measurements object.';
+    throw 'react-perf-utils: The compoent, "' +
+      displayName +
+      '"", does not exist in the measurements object.';
   }
   return avg ? value / metrics.count : value;
 }
 
 module.exports = {
-  getAvgRenderTime: function (displayName, measurements) {
-    return getMetric(displayName, measurements, 'render', true);
+  getAvgRenderTime: function(displayName, measurements) {
+    return getMetric(displayName, measurements, "render", true);
   },
 
-  getAvgMountTime: function (displayName, measurements) {
-    return getMetric(displayName, measurements, 'mount', true);
+  getAvgMountTime: function(displayName, measurements) {
+    return getMetric(displayName, measurements, "mount", true);
   },
 
-  getTotalRenderTime: function (displayName, measurements) {
-    return getMetric(displayName, measurements, 'render', false);
+  getTotalRenderTime: function(displayName, measurements) {
+    return getMetric(displayName, measurements, "render", false);
   },
 
-  getTotalMountTime: function (displayName, measurements) {
-    return getMetric(displayName, measurements, 'mount', false);
+  getTotalMountTime: function(displayName, measurements) {
+    return getMetric(displayName, measurements, "mount", false);
   },
 
-  getExclusiveSummary: ReactDefaultPerfAnalysis.getExclusiveSummary,
+  getExclusiveSummary: ReactDefaultPerfAnalysis.getExclusive,
 
-  getInclusiveSummary: ReactDefaultPerfAnalysis.getInclusiveSummary,
+  getInclusiveSummary: ReactDefaultPerfAnalysis.getInclusive,
 
-  getDOMSummary: ReactDefaultPerfAnalysis.getDOMSummary,
+  getDOMSummary: ReactDefaultPerfAnalysis.printOperations,
 
-  getTotalTime: ReactDefaultPerfAnalysis.getTotalTime
+  getWasted: ReactDefaultPerfAnalysis.getWasted
 };
